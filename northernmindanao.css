@@ -1,0 +1,47 @@
+/* northern_mindanao.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+.city-info {
+    display: none;
+    margin-top: 20px;
+}
+
+.city-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.city-info h2 {
+    color: #333;
+}
+
+.city-info p {
+    color: #666;
+    line-height: 1.6;
+}
