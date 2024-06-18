@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('welcomebackground.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Header styles */
+header {
+   background-image: url('header.jpg');
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #676765; /* Gray */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s; /* Add transition effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+h1:hover {
+    background-color: #555; /* Darker gray on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-right: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+.login-container {
+    flex: 1;
+    text-align: center;
+}
+
+.login {
+   color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+}
+.login:hover {
+    background-color: white;
+}
+
+.separator {
+    border-right: 2px solid #fff;
+    height: 1000px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav {
+    flex: 2;
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 30px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: gray; /* Change text color on hover */
+}
+
+.separator {
+    border-right: 2px solid #fff;
+    height: 30px;
+    margin:  20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer {
+    position: absolute; /* Set the footer position */
+    left: 0; /* Align it to the left */
+    bottom: 0; /* Align it to the bottom */
+    width: 100%; /* Take the full width of the viewport */
+    background-color: #3e3636; /* Gray */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Additional CSS for image containers and buttons */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.image-box {
+    text-align: center;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Add space between image and button */
+}
+
+.image-box img {
+    width: 300px; /* Adjust image width as needed */
+    height: 300px; /* Maintain aspect ratio */
+    border: 5px solid #fff; /* Add border to image */
+    border-radius: 10px; /* Optional: Add border radius */
+    transition: border-color 0.3s; /* Add transition effect */
+}
+
+.image-box img:hover {
+    border-color: #676765; /* Change border color on hover */
+}
+
+.image-button {
+    margin-top: 20px; /* Add space between image and button */
+    padding: 10px 20px; /* Add padding to button */
+    font-size: 16px;
+    border: none;
+    background-color: #676765; /* Gray */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.image-button:hover {
+    background-color: #555; /* Darker gray on hover */
+}

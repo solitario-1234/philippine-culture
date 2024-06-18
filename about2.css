@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('welcomebackground.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+   background-image: url('header.jpg');
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #676765; /* Gray */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s; /* Add transition effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+h1:hover {
+    background-color: #555; /* Darker gray on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-right: auto;
+}
+
+.content {
+    text-align: center;
+    padding: 20px; /* Add padding */
+}
+
+.login-container {
+    flex: 1;
+    text-align: center;
+}
+
+.login {
+   color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+}
+
+.login:hover {
+    background-color: black;
+}
+
+.separator {
+    border-right: 2px solid #fff;
+    height: 50px; /* Reduce height */
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+nav {
+    flex: 2;
+    text-align: right;
+}
+
+nav a {
+        color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 30px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+nav a:hover {
+    color: darkblue; /* Change text color on hover */
+}
+
+.separator {
+    border-right: 2px solid #fff;
+    height: 30px;
+    margin:  20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.image-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.image-box p {
+    margin: 0;
+}
+
+footer {
+    position: absolute; /* Set the footer position */
+    left: 0; /* Align it to the left */
+    bottom: 0; /* Align it to the bottom */
+    width: 100%; /* Take the full width of the viewport */
+    background-color: #3e3636; /* Gray */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo {
+        width: 150px; /* Reduce width */
+    }
+
+    .login {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    nav a {
+        font-size: 20px; /* Reduce font size */
+        padding: 20px; /* Reduce padding */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 120px; /* Further reduce width */
+    }
+
+    .login {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    nav a {
+        font-size: 18px; /* Further reduce font size */
+        padding: 15px; /* Further reduce padding */
+    }
+}
+.developer img {
+    width: 118px; /* Adjust the width to your preference */
+    height: 118px; /* Adjust the height to your preference */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.developers {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /* Align images from left to right */
+}
+.developers {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /* Align images from left to right */
+}
+
+.developer {
+    text-align: center;
+    width: 30%;
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 20px; /* Add margin to separate the images */
+}
